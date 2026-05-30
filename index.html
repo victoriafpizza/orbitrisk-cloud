@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OrbitRisk Cloud</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="navbar">
+      <div class="logo">OrbitRisk Cloud</div>
+      <div class="nav-links">
+        <a href="#problema">Problema</a>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#ods">ODS</a>
+        <a href="#arquitetura">Azure</a>
+      </div>
+    </nav>
+
+    <section class="hero-content">
+      <span class="tag">Global Solution • Indústria Espacial • Azure Cloud</span>
+      <h1>Monitoramento inteligente de riscos espaciais em nuvem</h1>
+      <p>
+        Plataforma web hospedada no Microsoft Azure para simular o acompanhamento
+        de riscos orbitais, tempestades solares, satélites monitorados e alertas
+        operacionais conectados à Indústria Espacial.
+      </p>
+      <a href="#dashboard" class="button">Ver dashboard</a>
+    </section>
+  </header>
+
+  <main>
+    <section id="problema" class="section">
+      <div class="section-text">
+        <span class="subtitle">Problema espacial</span>
+        <h2>Infraestruturas espaciais precisam de monitoramento constante</h2>
+        <p>
+          Satélites de comunicação, navegação, observação da Terra e monitoramento
+          climático são essenciais para a sociedade. Porém, riscos como tempestades
+          solares, detritos orbitais e falhas operacionais podem afetar serviços
+          críticos na Terra.
+        </p>
+        <p>
+          O OrbitRisk Cloud simula uma infraestrutura cloud capaz de receber,
+          processar e exibir indicadores de risco espacial para apoiar decisões
+          técnicas em ambientes de missão.
+        </p>
+      </div>
+    </section>
+
+    <section id="dashboard" class="section dark">
+      <span class="subtitle">Dashboard simulado</span>
+      <h2>Status operacional da missão</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Risco Orbital</h3>
+          <p id="orbitalRisk">Médio</p>
+          <small>Baseado em aproximação de objetos e estabilidade orbital.</small>
+        </div>
+
+        <div class="card">
+          <h3>Tempestade Solar</h3>
+          <p id="solarRisk">Baixo</p>
+          <small>Indicador simulado de atividade solar.</small>
+        </div>
+
+        <div class="card">
+          <h3>Satélites Monitorados</h3>
+          <p id="satellites">128</p>
+          <small>Quantidade simulada de ativos acompanhados.</small>
+        </div>
+
+        <div class="card">
+          <h3>Alertas Ativos</h3>
+          <p id="alerts">3</p>
+          <small>Eventos que exigem análise operacional.</small>
+        </div>
+      </div>
+
+      <div class="status-box">
+        <h3>Última análise</h3>
+        <p id="lastUpdate">Carregando...</p>
+      </div>
+    </section>
+
+    <section id="ods" class="section">
+      <div class="section-text">
+        <span class="subtitle">Conexão com ODS</span>
+        <h2>ODS 9 — Indústria, Inovação e Infraestrutura</h2>
+        <p>
+          A solução está conectada ao ODS 9 por propor uma infraestrutura digital
+          resiliente, segura e escalável para apoiar inovação dentro do ecossistema
+          espacial. O uso de computação em nuvem permite maior disponibilidade,
+          automação de deploy, monitoramento e boas práticas de segurança.
+        </p>
+        <p>
+          Como apoio secundário, a solução também se relaciona ao ODS 13, pois
+          satélites e dados espaciais podem contribuir para monitoramento climático
+          e resposta a eventos ambientais.
+        </p>
+      </div>
+    </section>
+
+    <section id="arquitetura" class="section dark">
+      <span class="subtitle">Arquitetura Azure</span>
+      <h2>Infraestrutura cloud proposta</h2>
+
+      <div class="architecture">
+        <div>Usuário</div>
+        <span>→</span>
+        <div>Azure App Service</div>
+        <span>→</span>
+        <div>OrbitRisk Cloud</div>
+        <span>→</span>
+        <div>Application Insights</div>
+      </div>
+
+      <div class="architecture second">
+        <div>GitHub</div>
+        <span>→</span>
+        <div>GitHub Actions</div>
+        <span>→</span>
+        <div>Deploy automático</div>
+        <span>→</span>
+        <div>Azure</div>
+      </div>
+
+      <p class="architecture-text">
+        A aplicação é publicada no Azure App Service por meio de pipeline CI/CD no
+        GitHub Actions. Credenciais são protegidas com GitHub Secrets e a solução
+        utiliza Azure Key Vault para representar o armazenamento seguro de secrets.
+      </p>
+    </section>
+
+    <section class="section team">
+      <span class="subtitle">Equipe</span>
+      <h2>Global Solution</h2>
+      <p>
+        Projeto desenvolvido para a disciplina de Cloud Computing, simulando uma
+        solução cloud aplicada à Indústria Espacial.
+      </p>
+      <p class="team-name">
+        Equipe: Victoria Franceschini Pizza - rm550609
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>OrbitRisk Cloud • Microsoft Azure • Global Solution</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
