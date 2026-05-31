@@ -1,0 +1,10 @@
+{
+  "name": "orbitrisk-cloud",
+  "version": "1.0.0",
+  "description": "Dashboard OrbitRisk Cloud para Global Solution",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {}
+}
